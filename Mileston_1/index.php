@@ -18,9 +18,7 @@ for ($i = 0; $i < $pw; $i++) {
     $last = strlen($caratteri[$pesca]) - 1;
     //.= per concatenare le stringhe
     $passwor .= $caratteri[$pesca][rand(0, $last)];
-}
-
-echo $passwor;
+};
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +48,7 @@ echo $passwor;
         </form>
         <div>
             <div>La lunghezza scelta è <span><?php echo $pw; ?></span></div>
+            <div>La password scelta è <span><?php echo $passwor; ?></span></div>
         </div>
     </div>
 </body>
